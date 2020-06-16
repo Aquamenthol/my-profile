@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="google-site-verification" content="QSMuirmrBZ6_wn0rIAM9IGfAlwfYMQV0QKMDf6I42Vg" />
+	<meta name="author" content="opzyra">
+	<meta name="robots" content="ALL">
+	<meta name="NaverBot" content="All">
+	<meta name="Yeti" content="index,follow">
+	
+	<title>로그인 페이지</title>
+	
+	<meta name="description" content="안녕하세요. 개인 포트폴리오 사이트 입니다.">
+	<meta name="og:title" content="SUHYUN">
+	<meta name="og:type" content="website">
+	<meta name="og:url" content="https://devhyun.com/">
+	<meta name="og:image" content="https://devhyun.com/images/og.png">
+	<meta name="og:description" content="안녕하세요. 개인 포트폴리오 사이트 입니다.">
+	
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="SUHYUN">
+	<meta name="twitter:description"
+	  content="안녕하세요. 개인 포트폴리오 사이트 입니다.">
+	
+	<meta name="twitter:domain" content="">
+	<link rel="shortcut icon" href="Assest/img/">
+	<link rel="stylesheet" href="/lib/material-icon/css/materialdesignicons.min.css">
+	<link rel="stylesheet" href="/lib/swiper/swiper.min.css">
+	<link rel="stylesheet" href="/lib/nprogress/nprogress.css">
+	<link rel="stylesheet" href="/lib/remodal/remodal.css">
+	<link rel="stylesheet" href="/lib/remodal/remodal-default-theme.css">
+	
+	<link rel="stylesheet" href="/lib/tui-editor/tui-editor.css">
+	<link rel="stylesheet" href="/lib/tui-editor/tui-editor-contents.css">
+	<link rel="stylesheet" href="/lib/tui-editor/codemirror.css">
+	<link rel="stylesheet" href="/lib/tui-editor/github.min.css">
+	
+	<link rel="stylesheet" href="Assest/css/default.css">
+	<link rel="stylesheet" href="Assest/css/lib.css">
+	<link rel="stylesheet" href="Assest/css/client.css">
+	<link rel="stylesheet" href="Assest/css/client.responsive.css">
+	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145435902-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag() { dataLayer.push(arguments); }
+	  gtag('js', new Date());
+	  gtag('config', 'UA-145435902-1');
+	</script>
+
+</head>
+
+<body>
+
+  <a href="#contents" class="skip">본문바로가기</a>
+  <header class="fix">
+    <div>
+      <h1><a href="index.html"><img src="Assest/img/logo.png" alt="HOME"></a></h1>
+      <h2 class="hide">메뉴</h2>
+      <a class="mobile_member" href="login.html"><img src="Assest/img/default_thumbnail.png" /></a>
+      <button id="burger" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="lnb menu">
+        <ul>
+          <li><a href="/about" class="">소개</a></li>
+          <li><a href="/project" class="">프로젝트</a></li>
+          <li><a href="/blog/post" class="">블로그</a></li>
+          <li><a href="https://github.com/Aquamenthol" target="_blank">깃허브</a></li>
+        </ul>
+      </nav>
+      <nav class="lnb account">
+        <ul>
+          <li><a href="login.html"><img src="Assest/img/default_thumbnail.png" />로그인</a></li>
+        </ul>
+        <div class="member_menu dropdown">
+          <a class="menu_item" href="/mypage">마이페이지</a>
+          <a class="menu_item" href="javascript:;" onclick="COMMON.logout();">로그아웃</a>
+        </div>
+      </nav>
+      <div id="overlay" class="overlay"></div>
+    </div>
+  </header>
+  <main id="contents" class="login">
+    <div>
+      <section class="box">
+        <div class="left">
+          <h2>간편 로그인</h2>
+          <h4>아래의 플랫폼으로 간단하게 가입하여 이용하실 수 있습니다.<br />
+          <img src="Assest/img/login.png" alt="로그인">
+          <ul>
+            <li>
+              <a class="btn_login google" href="https://accounts.google.com/o/oauth2/auth?client_id&#x3D;827800997782-6g0emmu92as4eontg5k20c8go0tgkdkp.apps.googleusercontent.com&amp;redirect_uri&#x3D;https://devhyun.com/login/google&amp;response_type&#x3D;code&amp;scope&#x3D;https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/plus.me+https://www.googleapis.com/auth/userinfo.profile">
+                <div><i class="mdi mdi-google"></i></div>
+                <div>Google</div>
+              </a>
+            </li>
+            <li>
+              <a class="btn_login facebook" href="https://www.facebook.com/v5.0/dialog/oauth?client_id&#x3D;422125218726658&amp;redirect_uri&#x3D;https://devhyun.com/login/facebook">
+                <div><i class="mdi mdi-facebook-box"></i></div>
+                <div>Facebook</div>
+              </a>
+            </li>
+          </ul>
+          <p>로그인 버튼을 누르시면 <a href="policy.html">개인정보 처리 방침</a>에 동의하시는 것으로 간주됩니다.</p>
+        </div>
+        <div class="right">
+          <img src="Assest/img/login.png" alt="로그인">
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div>
+      <div class="footer_links">
+        <div class="brand">
+          <span>CHOI SUHYUN</span>
+        </div>
+        <div class="policy">
+          <a href="policy.html">개인정보 처리 방침</a>
+        </div>
+        <div class="sns">
+          <a href="mailto:abc54388@gmail.com" title="이메일">
+            <img src="Assest/img/mail.png" alt="이메일">
+          </a>
+          <a href="https://github.com/Aquamenthol" target="_blank" title="깃허브">
+            <img src="Assest/img/git.png" alt="깃허브">
+          </a>
+        </div>
+      </div>
+      <div class="info">
+        <span><strong>CHOI SUHYUN</strong></span>
+        <span>이메일 opzyra@gmail.com</span>
+        <span>깃허브 Aquamenthol</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/lib/polyfill/polyfill.min.js"></script>
+  <script src="/lib/jquery/jquery.min.js"></script>
+  <script src="/lib/jquery/jquery.serializeObject.js"></script>
+  <script src="/lib/jquery-pagination/jquery.twbsPagination.min.js"></script>
+  <script src="/lib/sticky-kit/jquery.sticky-kit.min.js"></script>
+  <script src="/lib/swiper/swiper.min.js"></script>
+  <script src="/lib/remodal/remodal.js"></script>
+  
+  <script src="/lib/fxjs/fx.es5.min.js"></script>
+  <script src="/lib/lodash/lodash.min.js"></script>
+  <script src="/lib/nprogress/nprogress.js"></script>
+  <script src="/lib/moment/moment.js"></script>
+  <script src="/lib/qs/qs.js"></script>
+  <script src="/lib/sweetalert2/sweetalert2.min.js"></script>
+  <script src="/lib/text-effect/text-effect.js"></script>
+  <script src="/lib/tippy/popper.min.js"></script>
+  <script src="/lib/tippy/tippy.min.js"></script>
+  <script src="/lib/highlight/highlight.min.js"></script>
+  <script src="/js/vendor.module.js?v=hM7UOe9F"></script>
+  <script src="/js/module.js?v=hM7UOe9F"></script>
+  <script>STATE={"session":"guest"};</script>
+  <script>CONFIG('client', 'login')</script>
+</body>
+
+</html>
